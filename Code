@@ -1,0 +1,45 @@
+print('''
+*******************************************************************************
+          |                   |                  |                     |
+ _________|________________.=""_;=.______________|_____________________|_______
+|                   |  ,-"_,=""     `"=.|                  |
+|___________________|__"=._o`"-._        `"=.______________|___________________
+          |                `"=._o`"=._      _`"=._                     |
+ _________|_____________________:=._o "=._."_.-="'"=.__________________|_______
+|                   |    __.--" , ; `"=._o." ,-"""-._ ".   |
+|___________________|_._"  ,. .` ` `` ,  `"-._"-._   ". '__|___________________
+          |           |o`"=._` , "` `; .". ,  "-._"-._; ;              |
+ _________|___________| ;`-.o`"=._; ." ` '`."\` . "-._ /_______________|_______
+|                   | |o;    `"-.o`"=._``  '` " ,__.--o;   |
+|___________________|_| ;     (#) `-.o `"=.`_.--"_o.-; ;___|___________________
+____/______/______/___|o;._    "      `".o|o_.--"    ;o;____/______/______/____
+/______/______/______/_"=._o--._        ; | ;        ; ;/______/______/______/_
+____/______/______/______/__"=._o--._   ;o|o;     _._;o;____/______/______/____
+/______/______/______/______/____"=._o._; | ;_.--"o.--"_/______/______/______/_
+____/______/______/______/______/_____"=.o|o_.--""___/______/______/______/____
+/______/______/______/______/______/______/______/______/______/______/_____ /
+*******************************************************************************
+''')
+print("Welcome to Treasure Island.")
+print("Your mission is to find the treasure.\n") 
+
+firstchoice = input("You find a treasure map in the attic of a cabin in the woods. However, you cannot tell which side is the top and which is the bottom of the map! So you must randomly decide which way to go to figure it out. Do you leave the cabin and go left or right? Type 'left' or 'right'.\n").lower()
+
+if firstchoice == "left":
+  secondchoice = input("Nice! This is looking correct, as you are approaching a lake, which as seen on the map is the right way to the treasure.\nIt looks like there is a ferry service to bring you to the other side of the lake, but it won't be up and running again until tomorrow. However, its a small lake anyway, and you could likely just swim across. Would you like to wait or swim? Type 'wait' or 'swim'.\n").lower()
+  if secondchoice == "wait":
+    thirdchoice = input("Nice! The ferry worker saw you contemplating swimming and offered you a ferry ride over right now to avoid the brain eating parasites that are in this lake.\nUpon crossing the lake, you check the map and it says the treasure is located inside of one of the colorful barns up ahead, but doesn't specify which. Would you like to check the red, yellow, or blue barn? Type 'red', 'yellow', or 'blue'.\n").lower()
+    if thirdchoice == "red":
+      print("This barn spontaneously catches fire! Game Over.")
+    elif thirdchoice == "yellow":
+      print("The treasure is here! You Win!")
+    elif thirdchoice == "blue":
+      print("This barn is full of beasts! Game Over.")
+    else:
+      print("You chose a door that does not exist. Game Over.")
+  
+  else:
+    print("Agh! Haven't you heard of brain eating parasites? Game Over.")
+ 
+else: 
+  print("Unfortunately you didn't see the massive hole to the right of the cabin. Game Over.")
